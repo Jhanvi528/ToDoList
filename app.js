@@ -11,8 +11,9 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static('public'))
 
+
 mongoose.connect(
-  'mongodb+srv://admin-Jhanvi:8907@cluster0.zajoz.mongodb.net/todolistDB?retryWrites=true&w=majority'
+  'mongodb+srv://<username>:<password>@cluster0.zajoz.mongodb.net/todolistDB?retryWrites=true&w=majority'
 )
 
 const itemSchema = new mongoose.Schema({
